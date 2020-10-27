@@ -1,0 +1,9 @@
+Library
+Temp
+Obj
+Logs
+*.csproj
+.svn
+.vs
+New Unity Project.sln
+.vscode/settings.json
