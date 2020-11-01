@@ -7,3 +7,4 @@ Logs
 .vs
 New Unity Project.sln
 .vscode/settings.json
+.vscode/launch.json
