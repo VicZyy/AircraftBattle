@@ -9,9 +9,13 @@ public class Enemy : MonoBehaviour
 
     public float FireInterval = 2f;  //发射间隔
     public GameObject Rocket;
+    public int Point;
 
     private float rocketTimer; //发射间隔
     private GameObject _player;
+
+    public GameObject ExplosionFX;
+    public int Damage;
 
     private bool isActive = false;
     // Start is called before the first frame update
@@ -54,6 +58,8 @@ public class Enemy : MonoBehaviour
                 Life -= rocket.Power;
                 if (Life < 0)
                 {
+                    GameManager.Instance.AddScore(Point);
+                    Instantiate(ExplosionFX,transform.position,Quaternion.identity);
                     Destroy(gameObject);
                 }
             }
@@ -61,6 +67,7 @@ public class Enemy : MonoBehaviour
         else if (other.tag == "Player")
         {
             Life = 0;
+            
             Destroy(gameObject);
         }
     }

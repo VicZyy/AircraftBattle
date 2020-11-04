@@ -68,7 +68,7 @@ public class Player : MonoBehaviour
     {
         if (other.tag != "PlayerRocket")
         {
-            Life--;
+            GameManager.Instance.ChangeLife(other.GetComponent<Rocket>().Power);
             if (Life <= 0)
             {
                 Instantiate(ExplosionFX, transform.position, transform.rotation);

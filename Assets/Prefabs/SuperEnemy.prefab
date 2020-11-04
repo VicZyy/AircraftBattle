@@ -144,5 +144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 3
   Life: 10
-  Rocket: {fileID: 2540911548313083608, guid: b730a800aafff38448190029b769e57d, type: 3}
   FireInterval: 1
+  Rocket: {fileID: 2540911548313083608, guid: b730a800aafff38448190029b769e57d, type: 3}
+  Point: 5
+  ExplosionFX: {fileID: 100000, guid: fd0604056527c68458f893a5f9dc89e6, type: 3}
+  Damage: 1
