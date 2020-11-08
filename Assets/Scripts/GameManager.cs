@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// 游戏管理器，统一管理游戏的流程，UI
+/// </summary>
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
