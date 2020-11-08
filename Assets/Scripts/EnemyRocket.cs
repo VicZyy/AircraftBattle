@@ -14,6 +14,7 @@ public class EnemyRocket : Rocket
     void Update()
     {
         transform.Translate(new Vector3(0, 0, MoveSpeed * Time.deltaTime));
+        //
     }
 
      private void OnBecameInvisible()

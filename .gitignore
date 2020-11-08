@@ -5,6 +5,6 @@ Logs
 *.csproj
 .svn
 .vs
-New Unity Project.sln
+AircraftBattle.sln
 .vscode/settings.json
 .vscode/launch.json
